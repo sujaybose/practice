@@ -7,7 +7,8 @@ public class colLearn {
 //       System.out.println(cl.mapMethod(10).toString());
 //       cl.linList();
 //       cl.setTree();
-        cl.mapMethod();
+        //cl.mapMethod();
+        cl.hashMap();
     }
 
     //HashMap entry
@@ -28,6 +29,21 @@ public class colLearn {
         }
     }
 
+    //Hashmap
+
+    void hashMap(){
+        HashMap<String, String> hm= new HashMap();
+        hm.put("Bose1","sujay");
+        hm.put("Bose2", "Sreyank");
+        hm.put("Bose3", "Sreyanshi");
+
+        Iterator it = hm.entrySet().iterator();
+        while(it.hasNext()){
+            Map.Entry<String, String> en= (Map.Entry<String, String>) it.next();
+            System.out.println(en.getKey()+en.getValue());
+        }
+    }
+
     //LinkedList entry
     void linList(){
         LinkedList ls= new LinkedList<String>();
@@ -42,6 +58,8 @@ public class colLearn {
         }
 
     }
+
+
     //TreeSet entry
     void setTree() {
         Set st = new TreeSet();
